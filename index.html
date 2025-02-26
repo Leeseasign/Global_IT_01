@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <!-- jQuery library -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <!-- animate.css -->
+  <link rel="stylesheet" href="./css/animate.min.css">
   <!-- Popper JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <!-- Latest compiled JavaScript -->
@@ -24,7 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.7.1/slick/slick-theme.css" />
 </head>
 <body>
-  <!-- navibar ------------------------------------------------------------->
+  <!-- navbar ------------------------------------------------------------->
   <!-- <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -46,9 +48,10 @@
     </div>
   </nav> -->
 
-  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light nav-back1">
     <a class="navbar-brand" href="#">
-      <img src="img/logo02.png" alt="logo" style="width:240px;">
+      <img class="logo_img1" src="img/logo01.png" alt="logo" style="width:240px;">
+      <img class="logo_img2 hide" src="img/logo02.png" alt="logo" style="width:240px;">
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -58,16 +61,16 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">배달파트너 신청</a>
+          <a class="nav-link nav-text1" href="#">배달파트너 신청</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">사장님 입점 문의</a>
+          <a class="nav-link nav-text1" href="#">사장님 입점 문의</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">브랜드스토리</a>
+          <a class="nav-link nav-text1" href="#">브랜드스토리</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn text-light" href="#">앱다운로드</a>
+          <a class="nav-link btn text-light" href="./pages/resister.html">회원가입</a>
         </li>
       </ul>
     </div>
@@ -91,14 +94,14 @@
    <div id="partner" class="container text-center">
     <div class="row">
       <div class="col-lg-4">
-        <img src="/img/partner01.jpg" alt="배달파트너신청">
+        <img src="img/partner01.jpg" alt="배달파트너신청">
         <h4>배달 파트너 신청하기</h4>
         <div>반가워요<br>
           즐겁고 안전한 배달 함께 해요
         </div>
       </div>
       <div class="col-lg-4">
-        <img src="/img/partner02.jpg" alt="사장님입점문의">
+        <img src="img/partner02.jpg" alt="사장님입점문의">
         <h4>사장님 입점 문의하기</h4>
         <div>
           1600-9827<br>
@@ -106,7 +109,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <img src="/img/partner03.jpg" alt="브랜드스토리">
+        <img src="img/partner03.jpg" alt="브랜드스토리">
         <h4>브랜드 스토리 보러가기</h4>
         <div>
           쿠팡이츠의 이야기<br>
@@ -283,42 +286,47 @@
       <span>쿠팡이츠</span>와 함께하는 스토어
     </h2>
     <ul class="d-flex">
-      <li><img src="img/group01.png" alt="도미노피자"></li>
-      <li><img src="img/group02.png" alt="롯데리아"></li>
-      <li><img src="img/group03.png" alt="홍콩반점"></li>
-      <li><img src="img/group04.png" alt="크리스피도넛"></li>
-      <li><img src="img/group05.png" alt="비비큐"></li>
-      <li><img src="img/group06.png" alt="맥도날드"></li>
-      <li><img src="img/group07.png" alt="베스킨라빈스31"></li>
-      <li><img src="img/group08.png" alt="파리바게트"></li>
-      <li><img src="img/group09.png" alt="보쌈족발"></li>
-      <li><img src="img/group10.png" alt="할리스커피"></li>
-      <li><img src="img/group11.png" alt="투썸플레이스"></li>
-      <li><img src="img/group12.png" alt="피자에땅"></li>
-      <li><img src="img/group13.png" alt="쉑쉑버거"></li>
-      <li><img src="img/group14.png" alt="파파존스"></li>
-      <li><img src="img/group15.png" alt="스쿨푸드"></li>
-      <li><img src="img/group16.png" alt="호식이두마리치킨"></li>
-      <li><img src="img/group17.png" alt="본죽"></li>
-      <li><img src="img/group18.png" alt="원할머니보쌈"></li>
-      <li><img src="img/group01.png" alt="도미노피자"></li>
-      <li><img src="img/group02.png" alt="롯데리아"></li>
-      <li><img src="img/group03.png" alt="홍콩반점"></li>
-      <li><img src="img/group04.png" alt="크리스피도넛"></li>
-      <li><img src="img/group05.png" alt="비비큐"></li>
-      <li><img src="img/group06.png" alt="맥도날드"></li>
-      <li><img src="img/group07.png" alt="베스킨라빈스31"></li>
-      <li><img src="img/group08.png" alt="파리바게트"></li>
-      <li><img src="img/group09.png" alt="보쌈족발"></li>
-      <li><img src="img/group10.png" alt="할리스커피"></li>
-      <li><img src="img/group11.png" alt="투썸플레이스"></li>
-      <li><img src="img/group12.png" alt="피자에땅"></li>
-      <li><img src="img/group13.png" alt="쉑쉑버거"></li>
-      <li><img src="img/group14.png" alt="파파존스"></li>
-      <li><img src="img/group15.png" alt="스쿨푸드"></li>
-      <li><img src="img/group16.png" alt="호식이두마리치킨"></li>
-      <li><img src="img/group17.png" alt="본죽"></li>
-      <li><img src="img/group18.png" alt="원할머니보쌈"></li>
+      <ul class="panel">
+        <li><img src="img/group01.png" alt="도미노피자"></li>
+        <li><img src="img/group02.png" alt="롯데리아"></li>
+        <li><img src="img/group03.png" alt="홍콩반점"></li>
+        <li><img src="img/group04.png" alt="크리스피도넛"></li>
+        <li><img src="img/group05.png" alt="비비큐"></li>
+        <li><img src="img/group06.png" alt="맥도날드"></li>
+        <li><img src="img/group07.png" alt="베스킨라빈스31"></li>
+        <li><img src="img/group08.png" alt="파리바게트"></li>
+        <li><img src="img/group09.png" alt="보쌈족발"></li>
+        <li><img src="img/group10.png" alt="할리스커피"></li>
+        <li><img src="img/group11.png" alt="투썸플레이스"></li>
+        <li><img src="img/group12.png" alt="피자에땅"></li>
+        <li><img src="img/group13.png" alt="쉑쉑버거"></li>
+        <li><img src="img/group14.png" alt="파파존스"></li>
+        <li><img src="img/group15.png" alt="스쿨푸드"></li>
+        <li><img src="img/group16.png" alt="호식이두마리치킨"></li>
+        <li><img src="img/group17.png" alt="본죽"></li>
+        <li><img src="img/group18.png" alt="원할머니보쌈"></li>
+      </ul>
+
+      <ul class="panel">
+        <li><img src="img/group01.png" alt="도미노피자"></li>
+        <li><img src="img/group02.png" alt="롯데리아"></li>
+        <li><img src="img/group03.png" alt="홍콩반점"></li>
+        <li><img src="img/group04.png" alt="크리스피도넛"></li>
+        <li><img src="img/group05.png" alt="비비큐"></li>
+        <li><img src="img/group06.png" alt="맥도날드"></li>
+        <li><img src="img/group07.png" alt="베스킨라빈스31"></li>
+        <li><img src="img/group08.png" alt="파리바게트"></li>
+        <li><img src="img/group09.png" alt="보쌈족발"></li>
+        <li><img src="img/group10.png" alt="할리스커피"></li>
+        <li><img src="img/group11.png" alt="투썸플레이스"></li>
+        <li><img src="img/group12.png" alt="피자에땅"></li>
+        <li><img src="img/group13.png" alt="쉑쉑버거"></li>
+        <li><img src="img/group14.png" alt="파파존스"></li>
+        <li><img src="img/group15.png" alt="스쿨푸드"></li>
+        <li><img src="img/group16.png" alt="호식이두마리치킨"></li>
+        <li><img src="img/group17.png" alt="본죽"></li>
+        <li><img src="img/group18.png" alt="원할머니보쌈"></li>
+      </ul>
     </ul>
   </div>
   <!-- /store -->
@@ -381,5 +389,6 @@
           } );
     });
   </script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>

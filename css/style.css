@@ -9,14 +9,18 @@ a {text-decoration: none; color: #3a3a3a !important;}
 ul, ol {list-style: none;}
 
 /* nav */
-nav.navbar {position: fixed;top: 0; height: 80px; width: 100%; z-index: 100;background-color: #fff !important;}
+nav.navbar {position: fixed;top: 0; height: 80px; width: 100%; z-index: 100; transition: all 0.5s;}
+nav.nav-back1 {background-color: #ffffff00 !important;}
+nav.nav-back2 {background-color: #ffffff !important;}
 nav .navbar-collapse { justify-content: flex-end;}
-nav .navbar-nav {background-color: white;}
+nav .navbar-nav {background-color: rgba(255, 255, 255, 0);}
 nav .nav-item {font-weight: bold;transition: color 1s, background-color 1s;}
 nav .nav-item:hover {color: #00b0fb67;}
 nav .navbar-light .navbar-nav a.nav-link {color: black !important;}
 nav .navbar-nav>li:last-child {background-color: #00b0fb; text-align: center;border-radius: 4px;}
-nav.navbar-light ul.navbar-nav li:not(:last-child) a {color: black !important; transition: color 0.5s;}
+nav.navbar-light ul.navbar-nav li:not(:last-child) a {transition: color 0.5s;}
+nav.navbar-light ul.navbar-nav li:not(:last-child) a.nav-text1{color: white !important;}
+nav.navbar-light ul.navbar-nav li:not(:last-child) a.nav-text2{color: black !important;}
 nav.navbar-light ul.navbar-nav li:not(:last-child):hover a {color: rgb(110, 110, 110) !important;}
 nav .nav-link {padding: 6px 2rem !important;}
 /* main */
@@ -24,8 +28,10 @@ nav .nav-link {padding: 6px 2rem !important;}
   width: 100%;
   height: 768px;
   position: relative;
-  background: url("/img/pc_title.jpg") no-repeat center/cover;
+  background: url("../img/pc_title.jpg") no-repeat center/cover;
 }
+.navbar-brand img {transition: all 1s; position: absolute; top: 24px;left: 24px;}
+.navbar-brand img.hide {opacity: 0;}
 .main-title {
   position: absolute; 
   top: 50%; 
@@ -71,19 +77,25 @@ nav .nav-link {padding: 6px 2rem !important;}
 #new_try .flex-box .context {align-items: start;}
 
 /* brandsroty */
-#brandstory {padding-top: 5rem; background: url("/img/brandstory.jpg") no-repeat center/cover; height: 680px;}
+#brandstory {padding-top: 5rem; background: url("../img/brandstory.jpg") no-repeat center/cover; height: 680px;}
 #brandstory p {font-size: 48px; line-height: 60px;font-weight: bold;}
 #brandstory a {font-weight: bold; color: rgb(59, 59, 59); text-decoration: none;}
 
 /* store */
 #store {overflow: hidden;}
-#store ul {
+#store>ul {
   margin: 4rem auto; 
   height: 120px;
-  width: calc(calc(100% * 2) + 36%);
-  animation: moveLeft 20s linear infinite;
+  width: calc((90px + 10vw) * 36); 
 }
-#store li {padding: 1rem 1%;}
+#store>ul>ul.panel {
+  animation: moveLeft 30s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc((90px + 10vw) * 18);
+}
+#store li {padding: 1rem 5vw;}
 #store li img {
   width: 90px; 
   height: 90px; 
@@ -130,9 +142,11 @@ footer .row>div {font-weight: bold; color: #6e6e6e;}
   nav .navbar-nav { 
     width: 80%;
     position: absolute; 
+    top: 80px;
     left: 50%; 
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
   }
   nav .nav-item:hover {background-color: #f5f5f5;}
   #main {display: none;}
@@ -141,7 +155,7 @@ footer .row>div {font-weight: bold; color: #6e6e6e;}
   .navbar-collapse {display: block;}
 }
 @media screen and (max-width: 768px) {
-  #main {display: block; background: url("/img/mobile_title.jpg") no-repeat center/cover;}
+  #main {display: block; background: url("../img/mobile_title.jpg") no-repeat center/cover;}
   .main-title {top: 120px; transform: none; font-size: 20px;margin: auto 1rem;}
   .main-title>div:first-child {font-size: 32px; font-weight: bold;margin: 0.5rem 0 1rem 0;}
   .main-title>div:nth-child(2) {font-size: 12px; font-weight: bold;}
